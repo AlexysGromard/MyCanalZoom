@@ -29,5 +29,16 @@
         "default_icon": "images/toolbar-icon.svg"
     },
 
-    "permissions": [ ]
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    
+    "content_scripts": [
+      {
+        "matches": ["*://*.canalplus.com/*"],
+        "js": ["content-script.js"]
+      }
+    ]
 }
