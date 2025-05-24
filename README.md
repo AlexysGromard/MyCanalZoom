@@ -39,5 +39,8 @@
 - Toggle the "Enable ultrawide mode (21:9)" switch to scale videos.
 - Use the GitHub button to visit the project page for updates or to report issues.
 
+![Screenshot 2025-05-24 at 17 44 12](https://github.com/user-attachments/assets/1215b09b-fae5-44d8-a9f0-94d326622603)
+
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
