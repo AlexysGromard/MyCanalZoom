@@ -3,6 +3,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/AlexysGromard/MyCanalZoom)
 ![GitHub stars](https://img.shields.io/github/stars/AlexysGromard/MyCanalZoom?style=social)
 ![GitHub license](https://img.shields.io/github/license/AlexysGromard/MyCanalZoom)
+[![Download](https://img.shields.io/github/v/tag/AlexysGromard/MyCanalZoom?label=Download)](https://github.com/AlexysGromard/MyCanalZoom/releases/latest)
 
 ---
 
