@@ -6,6 +6,31 @@
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <header>
+      <h1>MyCanalZoom</h1>
+    </header>
+    <!--  Ultrawide mod  -->
+    <section class="settings-section">
+      <div class="setting-item">
+        <div class="icon-container">
+          <img src="images/icon-display-dark.svg" alt="Display" class="icon dark-icon" />
+          <img src="images/icon-display-light.svg" alt="Display" class="icon light-icon" />
+        </div>
+        <span class="setting-text">Enable ultrawide mode (21:9)</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-ultrawide" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      
+      <!--  GitHub Project  -->
+      <div class="setting-item github-button" role="button" tabindex="0" aria-label="Open GitHub repository">
+        <div class="icon-container">
+          <img src="images/safari-dark.svg" alt="Safari" class="icon dark-icon" />
+          <img src="images/safari-light.svg" alt="Safari" class="icon light-icon" />
+        </div>
+        <span class="setting-text">Voir sur GitHub</span>
+      </div>
+    </section>
 </body>
 </html>

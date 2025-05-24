@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		619132382DE1F3B500D18226 /* MyCanalZoom Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 619132372DE1F3B500D18226 /* MyCanalZoom Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		619132662DE205CB00D18226 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 619132652DE205C500D18226 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,13 @@
 			remoteInfo = MyCanalZoom;
 		};
 		619132392DE1F3B500D18226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 619131FD2DE1F3B400D18226 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 619132362DE1F3B500D18226;
+			remoteInfo = "MyCanalZoom Extension";
+		};
+		619132622DE1F93500D18226 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 619131FD2DE1F3B400D18226 /* Project object */;
 			proxyType = 1;
@@ -53,6 +61,7 @@
 		619132212DE1F3B500D18226 /* MyCanalZoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCanalZoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6191322B2DE1F3B500D18226 /* MyCanalZoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCanalZoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		619132372DE1F3B500D18226 /* MyCanalZoom Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyCanalZoom Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619132652DE205C500D18226 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -130,10 +139,12 @@
 		619131FC2DE1F3B400D18226 = {
 			isa = PBXGroup;
 			children = (
+				619132652DE205C500D18226 /* .gitignore */,
 				619132072DE1F3B400D18226 /* MyCanalZoom */,
 				619132242DE1F3B500D18226 /* MyCanalZoomTests */,
 				6191322E2DE1F3B500D18226 /* MyCanalZoomUITests */,
 				6191323B2DE1F3B500D18226 /* MyCanalZoom Extension */,
+				619132612DE1F92800D18226 /* Frameworks */,
 				619132062DE1F3B400D18226 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +158,13 @@
 				619132372DE1F3B500D18226 /* MyCanalZoom Extension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		619132612DE1F92800D18226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +183,7 @@
 			);
 			dependencies = (
 				6191323A2DE1F3B500D18226 /* PBXTargetDependency */,
+				619132632DE1F93500D18226 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				619132072DE1F3B400D18226 /* MyCanalZoom */,
@@ -297,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619132662DE205CB00D18226 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 619132362DE1F3B500D18226 /* MyCanalZoom Extension */;
 			targetProxy = 619132392DE1F3B500D18226 /* PBXContainerItemProxy */;
+		};
+		619132632DE1F93500D18226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 619132362DE1F3B500D18226 /* MyCanalZoom Extension */;
+			targetProxy = 619132622DE1F93500D18226 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,6 +588,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyCanalZoom;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -598,6 +624,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MyCanalZoom;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

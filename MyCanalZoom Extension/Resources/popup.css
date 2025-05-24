@@ -3,13 +3,154 @@
 }
 
 body {
-    width: 100px;
-    padding: 10px;
-
-    font-family: system-ui;
-    text-align: center;
+  margin: 0;
+  padding: 16px;
+  width: 320px;
+  font-family: system-ui;
+  user-select: none;
 }
 
+header h1 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.settings-section {
+  border-top: 1px solid #c6c6c8;
+  padding-top: 12px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  padding: 5px;
+}
+
+.icon-container {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 12px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #007aff;
+}
+
+.icon.light-icon {
+  display: block;
+}
+
+.icon.dark-icon {
+  display: none;
+}
+
+.setting-text {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #007aff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/*  Github  */
+.github-button {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.github-button:hover,
+.github-button:focus {
+  background-color: #f0f0f5;
+  outline: none;
+}
+
+
 @media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
+    .settings-section {
+      border-top-color: #3a3a3c;
+    }
+
+    .slider {
+      background-color: #3a3a3c;
+    }
+
+    input:checked + .slider {
+      background-color: #0a84ff;
+    }
+
+    .slider:before {
+      background-color: #f0f0f5;
+    }
+
+    input:checked + .slider:before {
+      background-color: #ffffff;
+    }
+    
+    /*  Icons  */
+    .icon.light-icon {
+      display: none;
+    }
+
+    .icon.dark-icon {
+      display: block;
+    }
+    
+    /*  Github  */
+    .github-button:hover,
+    .github-button:focus {
+      background-color: #3a3a3c;
+    }
 }
